@@ -5,10 +5,10 @@
 - created: 2022-10-04
 
 # Summary
-Addressing web3 login workflow where users can retreive their wallet in a decentralized manner from anywhere by providing a _username_ and a _password_.
+Addressing web3 login workflow where users can retrieve their wallet in a decentralized manner from anywhere by providing a _username_ and a _password_.
 
 # Context, motivation and guide level explanation
-A wallet is an assymetric keypair that represents an account in Ethereum or in Fair Data Society.
+A wallet is an asymmetric keypair that represents an account in Ethereum or in Fair Data Society.
 Usually, the private key is stored in the local storage of a wallet provider (such as Metamask or Blossom extension) or in a hardware wallet (such as Ledger).
 
 The solution worked out here allows to log in to the user account from any device in the same way like in case of Web2: providing a username and a password.
@@ -30,7 +30,7 @@ The steps are detailed in the following figure
 
 ## Calculating the location of the portable account
 The ENS is used to map usernames to public keys. From the public key, the account's ethereum address can be derived easily for everyone.
-The Ethereum address is needed to contruct Single Owner Chunk (SOC) address along with a consensual 32 bytes of Topic.
+The Ethereum address is needed to construct Single Owner Chunk (SOC) address along with a consensual 32 bytes of Topic.
 The login workflow defines the exact SOC Topic construction:
 
 ```
